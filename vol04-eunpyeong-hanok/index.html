@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>부부 여행기 Vol.04 은평역사한옥박물관</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;
+--bg:#ecf0f2;--paper:#fcfdfd;--ink:#1f272b;--sub:#5b676d;--accent:#3b6378;--line:#d0d9dd;--gold:#8a5a2b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12171a;--paper:#1c2327;--ink:#e3eaed;--sub:#9aa8ae;--accent:#86b3cb;--line:#2f393e;--gold:#d29a63;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12171a;--paper:#1c2327;--ink:#e3eaed;--sub:#9aa8ae;--accent:#86b3cb;--line:#2f393e;--gold:#d29a63;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+img{max-width:100%}
+.back{position:absolute;top:calc(env(safe-area-inset-top,0px) + 12px);left:max(12px,env(safe-area-inset-left,0px));z-index:3;min-height:40px;display:inline-flex;align-items:center;padding:0 14px;border-radius:99px;background:rgba(0,0,0,.45);color:#fff;text-decoration:none;font-size:14px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.hero{position:relative;min-height:clamp(420px,62vh,640px);display:flex;align-items:flex-end;color:#fff;background:#222 center/cover no-repeat;background-image:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.72)),url("img/20260725_150438.jpg");background-position:45% 55%}
+.hero .in{max-width:1080px;margin:0 auto;padding-block:48px;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));width:100%}
+.hero .tag{display:inline-block;border:1px solid rgba(255,255,255,.6);padding:3px 12px;border-radius:99px;font-size:13px;letter-spacing:.04em}
+.hero h1{font-size:clamp(34px,7vw,64px);line-height:1.15;margin:14px 0 10px;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+.hero p{margin:0;font-size:clamp(15px,2.2vw,18px);opacity:.92}
+.route{max-width:1080px;margin:-34px auto 0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));position:relative;z-index:2}
+.route ol{list-style:none;margin:0;padding:16px;background:var(--paper);border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.12);display:flex;flex-wrap:wrap;gap:6px 4px;font-size:14px}
+.route li{display:flex;align-items:center;gap:4px}.route li:not(:last-child)::after{content:"→";color:var(--accent);margin-left:4px}
+.route b{color:var(--accent);font-variant-numeric:tabular-nums}
+main{max-width:1080px;margin:0 auto;padding-block:40px 20px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));position:relative}
+main::before{content:"";position:absolute;left:31px;top:40px;bottom:0;width:2px;background:var(--line)}
+.ch{position:relative;padding-left:44px;margin-bottom:56px}
+.dot{position:absolute;left:8px;top:10px;width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg)}
+.ch header{display:flex;gap:14px;align-items:flex-start}
+.ch header>div{min-width:0}
+.no{font-size:40px;font-weight:800;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums}
+.time{margin:0;color:var(--sub);font-size:13px}
+h2{margin:2px 0 0;font-size:clamp(21px,3.4vw,28px);letter-spacing:-.01em;text-wrap:balance}
+.intro{color:var(--sub);margin:12px 0 18px;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.card{margin:0;background:var(--paper);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+.card.wide{grid-column:1/-1}
+.ph{position:relative;background:#000}
+.ph img{display:block;width:100%;height:240px;object-fit:cover;cursor:zoom-in}
+.wide .ph img{height:min(56vw,520px)}
+.ts{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.6);color:#fff;font-size:12px;padding:2px 9px;border-radius:99px;font-variant-numeric:tabular-nums;pointer-events:none}
+figcaption{padding:12px 15px 15px;font-size:15px}
+footer{text-align:center;color:var(--sub);font-size:13px;padding-block:10px 50px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+footer a{color:var(--gold);font-weight:700}
+.next{display:inline-block;margin-top:8px;color:var(--gold);font-weight:700}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:9;cursor:zoom-out;padding:16px}#lb.on{display:flex}#lb img{max-width:100%;max-height:100%;border-radius:6px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (max-width:640px){main::before{left:23px}.ch{padding-left:34px}.dot{left:0}.no{font-size:30px}.ph img{height:auto;max-height:420px}}
+</style>
+<style id="font-up">
+/* 폰트 2단계 확대 (약 1.25배) */
+body{font-size:17.5px}
+.back{font-size:17px}
+.hero .tag{font-size:16px}
+.hero h1{font-size:clamp(40px,8.5vw,78px)}
+.hero p{font-size:clamp(18px,2.7vw,22px)}
+.route ol{font-size:17px}
+.no{font-size:48px}
+.time{font-size:16px}
+h2{font-size:clamp(25px,4.2vw,34px)}
+.ts{font-size:14px}
+figcaption{font-size:19px}
+footer{font-size:16px}
+@media (max-width:640px){.no{font-size:36px}}
+</style>
+</head>
+<body>
+<a class="back" href="../">부부 여행기 목록</a>
+<section class="hero"><div class="in">
+<span class="tag">2026.07.25 (토) · 둘이서 · 은평한옥마을</span>
+<h1>기와지붕 너머<br>북한산이 한눈에</h1>
+<p>은평역사한옥박물관 옥상 전망대 · 사진 2장 (원본 2장 전부)</p>
+</div></section>
+<nav class="route" aria-label="이동 경로"><ol><li><b>15:04</b>&nbsp;박물관 옥상</li><li><b>15:05</b>&nbsp;북한산 배경 투샷</li><li><b>이후</b>&nbsp;귀가</li></ol></nav>
+<main><section class="ch"><div class="dot"></div>
+<header><span class="no">01</span><div><p class="time">15:04 – 15:05 · 은평역사한옥박물관 옥상</p><h2>옥상 전망대 — 배경이 다 했음</h2></div></header>
+<p class="intro">흐린 여름 오후, 은평한옥마을의 은평역사한옥박물관. 옥상에 오르면 한옥 지붕들 뒤로 북한산 바위 능선이 병풍처럼 펼쳐짐.</p><div class="grid"><figure class="card wide"><div class="ph"><img loading="lazy" src="img/20260725_150438.jpg" alt="북한산을 배경으로 브이 포즈를 한 부부" style="object-position:45% 62%"><span class="ts">15:04</span></div><figcaption>남편은 앞에서 브이, 아내는 뒤에서 브이. 산봉우리도 브이 모양이라 셋이 맞춘 듯함.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20260725_150504.jpg" alt="북한산 능선 앞 부부 투샷" style="object-position:45% 58%"><span class="ts">15:05</span></div><figcaption>26초 만에 포즈 정비 완료. 줄무늬 셔츠와 북한산 능선, 둘 다 선이 살아 있음.</figcaption></figure></div></section><section class="ch"><div class="dot"></div>
+<header><span class="no">02</span><div><p class="time">15:05 이후 · 은평한옥마을 → 집</p><h2>귀가 — 짧고 굵게</h2></div></header>
+<p class="intro">사진은 두 장뿐이지만 북한산 풍경 한 장으로 하루 요약이 끝남. 비슷한 구도였지만 포즈가 달라 2장 모두 실음.</p></section></main>
+<footer>사진 시각은 파일명·촬영정보 기준<br>
+<span class="next">Vol.04 은평역사한옥박물관 → Vol.05 다음 여행</span><br>
+<a href="../">부부 여행기 목록으로</a></footer>
+<div id="lb"><img alt=""></div>
+<script>
+const lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.ph img').forEach(i=>i.addEventListener('click',()=>{li.src=i.src;li.alt=i.alt;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+</script>
+</body>
+</html>
