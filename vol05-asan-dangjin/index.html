@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/icon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icons/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+<meta name="theme-color" content="#b8475f">
+<meta name="apple-mobile-web-app-title" content="여행기 아산당진">
+<meta name="application-name" content="여행기 아산당진">
+<title>부부 여행기 Vol.05 아산·당진</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;
+--bg:#f6f0e1;--paper:#fffdf6;--ink:#2a2416;--sub:#6b604c;--accent:#946010;--line:#e3d7bb;--gold:#a63d22}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#16130c;--paper:#211d14;--ink:#f0e8d6;--sub:#b3a88f;--accent:#e2a948;--line:#3b3424;--gold:#e5845f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#16130c;--paper:#211d14;--ink:#f0e8d6;--sub:#b3a88f;--accent:#e2a948;--line:#3b3424;--gold:#e5845f;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+img{max-width:100%}
+.back{position:absolute;top:calc(env(safe-area-inset-top,0px) + 12px);left:max(12px,env(safe-area-inset-left,0px));z-index:3;min-height:40px;display:inline-flex;align-items:center;padding:0 14px;border-radius:99px;background:rgba(0,0,0,.45);color:#fff;text-decoration:none;font-size:14px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.hero{position:relative;min-height:clamp(420px,62vh,640px);display:flex;align-items:flex-end;color:#fff;background:#222 center/cover no-repeat;background-image:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.72)),url("img/20261108_122606.jpg");background-position:50% 72%}
+.hero .in{max-width:1080px;margin:0 auto;padding-block:48px;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));width:100%}
+.hero .tag{display:inline-block;border:1px solid rgba(255,255,255,.6);padding:3px 12px;border-radius:99px;font-size:13px;letter-spacing:.04em}
+.hero h1{font-size:clamp(34px,7vw,64px);line-height:1.15;margin:14px 0 10px;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+.hero p{margin:0;font-size:clamp(15px,2.2vw,18px);opacity:.92}
+.route{max-width:1080px;margin:-34px auto 0;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));position:relative;z-index:2}
+.route ol{list-style:none;margin:0;padding:16px;background:var(--paper);border-radius:16px;box-shadow:0 8px 30px rgba(0,0,0,.12);display:flex;flex-wrap:wrap;gap:6px 4px;font-size:14px}
+.route li{display:flex;align-items:center;gap:4px}.route li:not(:last-child)::after{content:"→";color:var(--accent);margin-left:4px}
+.route b{color:var(--accent);font-variant-numeric:tabular-nums}
+main{max-width:1080px;margin:0 auto;padding-block:40px 20px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));position:relative}
+main::before{content:"";position:absolute;left:31px;top:40px;bottom:0;width:2px;background:var(--line)}
+.ch{position:relative;padding-left:44px;margin-bottom:56px}
+.dot{position:absolute;left:8px;top:10px;width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg)}
+.ch header{display:flex;gap:14px;align-items:flex-start}
+.ch header>div{min-width:0}
+.no{font-size:40px;font-weight:800;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums}
+.time{margin:0;color:var(--sub);font-size:13px}
+h2{margin:2px 0 0;font-size:clamp(21px,3.4vw,28px);letter-spacing:-.01em;text-wrap:balance}
+.intro{color:var(--sub);margin:12px 0 18px;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.card{margin:0;background:var(--paper);border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.07)}
+.card.wide{grid-column:1/-1}
+.ph{position:relative;background:#000}
+.ph img{display:block;width:100%;height:240px;object-fit:cover;cursor:zoom-in}
+.wide .ph img{height:min(56vw,520px)}
+.ts{position:absolute;left:10px;top:10px;background:rgba(0,0,0,.6);color:#fff;font-size:12px;padding:2px 9px;border-radius:99px;font-variant-numeric:tabular-nums;pointer-events:none}
+figcaption{padding:12px 15px 15px;font-size:15px}
+footer{text-align:center;color:var(--sub);font-size:13px;padding-block:10px 50px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+footer a{color:var(--gold);font-weight:700}
+.next{display:inline-block;margin-top:8px;color:var(--gold);font-weight:700}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;z-index:9;cursor:zoom-out;padding:16px;touch-action:pinch-zoom}#lb.on{display:flex}#lb img{max-width:100%;max-height:100%;border-radius:6px}
+#lb .x{position:absolute;top:calc(env(safe-area-inset-top,0px) + 12px);right:max(12px,env(safe-area-inset-right,0px));width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.18);color:#fff;font-size:24px;line-height:1;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (max-width:640px){main::before{left:23px}.ch{padding-left:34px}.dot{left:0}.no{font-size:30px}.ph img{height:auto;max-height:420px}}
+</style>
+<style id="font-up">
+/* 폰트 2단계 확대 (약 1.25배) */
+body{font-size:17.5px}
+.back{font-size:17px}
+.hero .tag{font-size:16px}
+.hero h1{font-size:clamp(40px,8.5vw,78px)}
+.hero p{font-size:clamp(18px,2.7vw,22px)}
+.route ol{font-size:17px}
+.no{font-size:48px}
+.time{font-size:16px}
+h2{font-size:clamp(25px,4.2vw,34px)}
+.ts{font-size:14px}
+figcaption{font-size:19px}
+footer{font-size:16px}
+@media (max-width:640px){.no{font-size:36px}}
+/* 한글 단어 단위 줄바꿈 */
+body{word-break:keep-all;overflow-wrap:break-word}.no{flex:none}
+</style>
+</head>
+<body>
+<a class="back" href="../">부부 여행기 목록</a>
+<section class="hero"><div class="in">
+<span class="tag">2026.11.08 (일) · 친구 부부와 넷이서</span>
+<h1>은행잎 카펫 깔고<br>아산·당진 한 바퀴</h1>
+<p>신정호 → 외암민속마을 → 삽교호 → 면천읍성·골정지 → 삼선산수목원 · 사진 23장 (원본 25장 중 연사 2장 제외)</p>
+</div></section>
+<nav class="route" aria-label="이동 경로"><ol><li><b>10:11</b>&nbsp;신정호</li><li><b>12:17</b>&nbsp;외암민속마을</li><li><b>13:46</b>&nbsp;삽교호</li><li><b>14:53</b>&nbsp;면천읍성·골정지</li><li><b>16:06</b>&nbsp;삼선산수목원</li><li><b>이후</b>&nbsp;귀가</li></ol></nav>
+<main><section class="ch"><div class="dot"></div>
+<header><span class="no">01</span><div><p class="time">10:11 – 10:37 · 아산 신정호정원</p><h2>신정호 — 아침 10시의 달빛누리교</h2></div></header>
+<p class="intro">흐린 일요일 아침, 아산 신정호에서 출발. 호숫가 데크길을 한 바퀴 걷고, ‘ASAN’ 대형 액자 포토존에 넷이 함께 들어감.</p><div class="grid"><figure class="card wide"><div class="ph"><img loading="lazy" src="img/20261108_101139.jpg" alt="신정호정원 달빛누리교 조형물 앞 네 사람" style="object-position:50% 72%"><span class="ts">10:11</span></div><figcaption>‘달빛누리교’ 간판 앞인데 시각은 오전 10시 11분. 달님은 아직 출근 전임. 왼쪽 분은 간판 대신 본인이 조형물이 되기로 결심, 런지 자세로 하체 운동까지 겸함.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_101631.jpg" alt="신정호 수변 난간 앞 4인 셀카" style="object-position:50% 72%"><span class="ts">10:16</span></div><figcaption>호수는 잔잔한데 앞줄은 이미 시끌벅적. 신정호 수면보다 넷의 광대가 먼저 출렁이는 중.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_102514.jpg" alt="데크길 위 4인 셀카" style="object-position:50% 58%"><span class="ts">10:25</span></div><figcaption>데크길 4층 탑 쌓기 셀카. 브이는 아래층 담당, 맨 위층 분은 ‘내 얼굴 화면에 들어갔나’ 확인 담당. 역할 분담이 회사보다 확실함.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_103708.jpg" alt="ASAN 액자 포토존 속 네 사람" style="object-position:50% 50%"><span class="ts">10:37</span></div><figcaption>ASAN 액자 속에 넷이 쏙. 액자값은 무료, 표정 관리는 각자 부담. 앞줄 두 분 웃음소리가 액자 밖으로 새어 나와 관리사무소에 민원 들어갈 뻔함.</figcaption></figure></div></section><section class="ch"><div class="dot"></div>
+<header><span class="no">02</span><div><p class="time">12:17 – 12:52 · 아산 외암민속마을</p><h2>외암민속마을 — 레드카펫 말고 옐로카펫</h2></div></header>
+<p class="intro">초가지붕과 돌담이 이어지는 외암민속마을. 큰 은행나무 아래 바닥이 온통 노란 잎으로 덮여 있어, 아무 데나 서도 화보가 되는 구간.</p><div class="grid"><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_121659.jpg" alt="초가집과 감나무 앞 부부 셀카" style="object-position:60% 68%"><span class="ts">12:17</span></div><figcaption>초가집 앞 투샷. 뒤의 감나무는 까치밥 몇 알만 남기고 퇴근 준비 끝. 앞의 두 분은 아직 퇴근 생각 전혀 없음.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/1794134925610.jpg" alt="은행잎이 깔린 마당에 선 부부" style="object-position:50% 66%"><span class="ts">12:23</span></div><figcaption>은행잎 카펫 위 커플 워킹. 이 카펫은 밟을 때마다 ‘바스락’ 효과음까지 무료 제공. 단, 은행 열매 밟으면 냄새도 무료 제공이라 발밑 주의.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_122343.jpg" alt="큰 은행나무 아래 부부" style="object-position:50% 70%"><span class="ts">12:23</span></div><figcaption>은행나무가 뒤에서 팔 벌려 액자 노릇 중. 나무는 노란 단풍, 두 분은 노란 미소로 깔맞춤 완료.</figcaption></figure><figure class="card wide"><div class="ph"><img loading="lazy" src="img/20261108_122606.jpg" alt="거대한 은행나무 전체와 부부" style="object-position:50% 75%"><span class="ts">12:26</span></div><figcaption>은행나무 전신샷 성공. 나무가 너무 커서 사람은 하단 자막처럼 나옴. 이 사진의 주인공이 누구인지는 보는 사람 양심에 맡김.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/1794132767884.jpg" alt="벤치의 부부를 무릎 꿇고 촬영하는 일행" style="object-position:50% 62%"><span class="ts">12:27</span></div><figcaption>현장 포착: 벤치 위 부부를 찍겠다고 은행잎 위에 무릎까지 꿇은 전속 사진사. 그리고 그 사진사를 몰래 찍은 또 다른 사진사. 외암마을 파파라치 2중 구조 완성.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_122915.jpg" alt="돌담길 앞 4인 셀카" style="object-position:38% 72%"><span class="ts">12:29</span></div><figcaption>돌담길 4인 셀카. 셀카 담당이 앞으로 너무 나와 얼굴 크기 서열이 자동 정리됨. 뒤의 세 분은 원근법 혜택을 톡톡히 누림.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_125235.jpg" alt="마을 앞 개울과 다리 배경 셀카" style="object-position:60% 62%"><span class="ts">12:52</span></div><figcaption>마을을 나서기 전 개울 앞 마지막 셀카. 손에 쥔 셀카봉이 오늘 일행 중 제일 바쁜 동행. 일당 청구하면 할 말 없음.</figcaption></figure></div></section><section class="ch"><div class="dot"></div>
+<header><span class="no">03</span><div><p class="time">13:46 – 13:47 · 방조제 배수갑문 (삽교호로 추정)</p><h2>갑문 앞 — 물은 빠져나가고 사진은 남음</h2></div></header>
+<p class="intro">바닷가 방조제로 이동. 배수갑문 탑마다 ‘농·어·촌·공·사’ 글자가 한 자씩 붙어 있음. 바로 옆 공원 단풍 아래에서 한 장 더.</p><div class="grid"><figure class="card wide"><div class="ph"><img loading="lazy" src="img/20261108_134610.jpg" alt="배수갑문 앞 데크에서 브이 포즈를 한 네 사람" style="object-position:72% 70%"><span class="ts">13:46</span></div><figcaption>배수갑문 앞 4인 브이. 뒤의 갑문 탑들이 ‘농어촌공사’를 한 글자씩 들고 일렬로 서 있어 마치 카드섹션 응원단 같음. 응원 문구 선정은 다소 아쉬움.</figcaption></figure><figure class="card wide"><div class="ph"><img loading="lazy" src="img/20261108_134709.jpg" alt="단풍 가지를 든 아내와 남편" style="object-position:28% 62%"><span class="ts">13:47</span></div><figcaption>단풍 가지 하나를 ‘가을 소품’으로 즉석 섭외. 출연료는 사진 한 장, 계약 기간은 셔터 한 번. 나무 측 소속사와는 사후 협의 예정.</figcaption></figure></div></section><section class="ch"><div class="dot"></div>
+<header><span class="no">04</span><div><p class="time">14:53 – 15:16 · 당진 면천읍성 · 골정지</p><h2>면천읍성 — 성벽 안에서 찍은 사극 한 편</h2></div></header>
+<p class="intro">당진 면천읍성. 남문 옹성의 둥근 돌담 안쪽에서 시작해 성 안 은행나무, 연못 골정지와 정자, 다시 남문 누각 아래까지 한 바퀴.</p><div class="grid"><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_145335.jpg" alt="면천읍성 남문 옹성 안 4인 셀카" style="object-position:50% 74%"><span class="ts">14:53</span></div><figcaption>옹성 돌담 안 4인 셀카. 오늘부로 면천읍성 수문장 4인조 결성. 단, 지급된 무기가 브이와 엄지척뿐이라 방어력은 의문.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_145931.jpg" alt="성 안 큰 은행나무 앞 부부" style="object-position:50% 86%"><span class="ts">14:59</span></div><figcaption>은행나무 앞 투샷. 남편분 입 모양이 ‘와~’ 그대로 굳음. 나무 크기에 진심으로 놀란 표정이며 연기 아님, 리허설도 없었음.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_150527.jpg" alt="붉은 단풍 덤불 앞 부부 셀카" style="object-position:50% 58%"><span class="ts">15:05</span></div><figcaption>불타는 단풍 덤불 앞 투샷. 단풍이 이렇게 진한데 두 분 얼굴이 더 환하게 나와서 단풍 체면이 살짝 구겨짐.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_150701.jpg" alt="새빨간 단풍과 연못 정자 앞 부부" style="object-position:55% 58%"><span class="ts">15:07</span></div><figcaption>새빨간 단풍, 파란 재킷, 아이보리 패딩. 의도한 적 없는 삼색 코디가 우연히 완성됨. 골정지 정자는 조용히 배경 엑스트라를 수락함.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/1794134890179.jpg" alt="골정지 정자 앞 다리 위에서 팔을 벌린 부부" style="object-position:50% 62%"><span class="ts">15:09</span></div><figcaption>정자 앞 다리 위 ‘만세’ 포즈. 보정 앱 덕분에 두 사람은 10년 젊어졌는데, 뒤의 정자는 보정을 거부하고 원래 나이 그대로 버팀.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_151635.jpg" alt="면천읍성 남문 누각 아래 부부" style="object-position:50% 80%"><span class="ts">15:16</span></div><figcaption>남문 누각 아래 투샷. 누각이 내려다보며 ‘조선 땅에 패딩은 반칙’이라고 하는 듯. 오른쪽 끝 행인 분은 본의 아니게 특별출연, 출연료 미지급.</figcaption></figure></div></section><section class="ch"><div class="dot"></div>
+<header><span class="no">05</span><div><p class="time">16:06 – 16:25 · 당진 삼선산수목원 (장소 추정)</p><h2>수목원 — 출렁다리, 억새, 마지막 단풍</h2></div></header>
+<p class="intro">해가 기울 무렵 단풍 든 산비탈 수목원으로. 출렁다리를 건너고, 억새 군락과 단풍나무 아래에서 하루를 마무리.</p><div class="grid"><figure class="card wide"><div class="ph"><img loading="lazy" src="img/20261108_160649.jpg" alt="단풍 든 산비탈을 배경으로 출렁다리 위 네 사람" style="object-position:34% 70%"><span class="ts">16:06</span></div><figcaption>출렁다리 위 4층 탑. 맨 뒤 분 혼자 ‘저기 봐!’ 하고 손가락으로 가리키는데 아무도 안 봄. 앞의 세 사람은 끝까지 카메라만 응시, 프로 정신 투철.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_161234.jpg" alt="단풍나무 아래 4인 셀카" style="object-position:50% 74%"><span class="ts">16:12</span></div><figcaption>단풍나무 아래 4인 셀카. 서로 어깨를 감싸다 보니 누구 팔이 누구 어깨에 있는지 감식반 투입이 필요한 상황.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_161943.jpg" alt="억새 군락 앞 부부" style="object-position:50% 64%"><span class="ts">16:19</span></div><figcaption>억새 앞 투샷. 뒤의 억새가 바람에 머리를 한껏 부풀려 준 덕분에 두 분 헤어스타일이 상대적으로 단정해 보이는 효과 발생. 억새에게 감사.</figcaption></figure><figure class="card"><div class="ph"><img loading="lazy" src="img/20261108_162547.jpg" alt="붉은 단풍나무 아래 네 사람의 마지막 셀카" style="object-position:36% 70%"><span class="ts">16:25</span></div><figcaption>오늘의 엔딩 크레딧. 새빨간 단풍 아래 넷이 다시 집결. 맨 앞 브이 담당은 아침부터 셀카를 찍어 온 팔 근육이 오늘 MVP. 내일 아침 파스 한 장 예약.</figcaption></figure></div></section><section class="ch"><div class="dot"></div>
+<header><span class="no">06</span><div><p class="time">16:30 이후 · 당진 → 집</p><h2>귀가 — 노랑으로 시작해 빨강으로 끝난 하루</h2></div></header>
+<p class="intro">아침엔 신정호 호수, 점심엔 외암마을 은행잎, 오후엔 면천읍성과 골정지, 해 질 녘엔 수목원 단풍까지. 은행나무 연사 4장 중 거의 같은 2장은 빼고 가장 선명한 2장만 실음.</p></section></main>
+<footer>사진 시각은 파일명·촬영정보 기준 · 삽교호·삼선산수목원은 사진 속 단서로 추정한 장소명<br>
+<span class="next">Vol.05 아산·당진 → Vol.06 다음 여행</span><br>
+<a href="../">부부 여행기 목록으로</a></footer>
+<div id="lb" role="dialog" aria-modal="true" aria-label="사진 크게 보기"><button type="button" class="x" aria-label="닫기">✕</button><img alt=""></div>
+<script>
+/* 사진 확대: 열 때 기록 1칸 추가 → 뒤로가기는 사진만 닫고 같은 위치에 머묾 */
+(()=>{const lb=document.getElementById('lb'),li=lb.querySelector('img');let pushed=false;
+const hide=()=>{lb.classList.remove('on');li.removeAttribute('src');document.documentElement.style.overflow=''};
+const show=i=>{li.src=i.currentSrc||i.src;li.alt=i.alt;lb.classList.add('on');document.documentElement.style.overflow='hidden';
+ try{history.pushState({lb:1},'');pushed=true}catch(e){pushed=false}};
+const close=()=>{if(!lb.classList.contains('on'))return;if(pushed){pushed=false;try{history.back();return}catch(e){}}hide()};
+try{if(history.state&&history.state.lb)history.replaceState(null,'')}catch(e){}
+document.querySelectorAll('.ph img,.gal img').forEach(i=>i.addEventListener('click',()=>show(i)));
+lb.addEventListener('click',close);
+addEventListener('popstate',()=>{pushed=false;hide()});
+addEventListener('pageshow',()=>{if(lb.classList.contains('on'))hide()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});})();
+</script>
+</body>
+</html>
