@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<meta name="build" content="2026-11-09-2140">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <link rel="icon" href="../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../icons/icon-32.png">
@@ -111,6 +112,15 @@ lb.addEventListener('click',close);
 addEventListener('popstate',()=>{pushed=false;hide()});
 addEventListener('pageshow',()=>{if(lb.classList.contains('on'))hide()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});})();
+</script>
+<script>
+/* 최신본 자동 확인: 휴대폰 브라우저·앱이 예전 사본(캐시)을 보여 주면 새 사본으로 자동 교체 */
+(()=>{const me=(document.querySelector('meta[name="build"]')||{}).content;if(!me)return;let busy=false;
+const check=async()=>{if(busy)return;busy=true;try{const r=await fetch('./?nc='+Date.now(),{cache:'no-store'});
+ if(r.ok){const m=(await r.text()).match(/<meta name="build" content="([^"]+)"/);
+  if(m&&m[1]!==me){location.replace(location.pathname+'?v='+encodeURIComponent(m[1])+location.hash);return}}}catch(e){}busy=false};
+check();addEventListener('pageshow',e=>{if(e.persisted)check()});
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')check()});})();
 </script>
 </body>
 </html>
